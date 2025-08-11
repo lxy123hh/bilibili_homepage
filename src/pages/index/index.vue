@@ -11,9 +11,24 @@
 </route>
 
 <script lang="ts" setup>
-
+import BottonTabBar from '@/components/layout/BottonTabBar.vue'
+import HomePage from '@/components/layout/HomeMain.vue'
+import TopNavBar from '@/components/layout/TopNavBar.vue'
 </script>
 
 <template>
-  
+  <view class="index">
+    <TopNavBar />
+    <HomePage />
+    <BottonTabBar />
+  </view>
 </template>
+
+<style scoped>
+.index {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+</style>

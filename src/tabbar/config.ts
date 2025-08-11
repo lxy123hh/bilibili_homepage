@@ -27,7 +27,8 @@ export const TABBAR_MAP = {
 }
 
 // TODO: 1/3. 通过这里切换使用tabbar的策略
-export const selectedTabbarStrategy = TABBAR_MAP.CUSTOM_TABBAR_WITH_CACHE
+//export const selectedTabbarStrategy = TABBAR_MAP.CUSTOM_TABBAR_WITH_CACHE
+export const selectedTabbarStrategy = TABBAR_MAP.NO_TABBAR
 
 // TODO: 2/3. 更新下面的 tabbar 配置
 // 如果是使用 NO_TABBAR(0)，nativeTabbarList 和 customTabbarList 都不生效(里面的配置不用管)
@@ -122,3 +123,4 @@ export const tabbarList = nativeTabbarList
 
 // 0和1 需要显示底部的tabbar的各种配置，以利用缓存
 export const tabBar = tabbarCacheEnable ? _tabbar : undefined
+
