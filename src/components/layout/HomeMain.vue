@@ -11,6 +11,6 @@
 <style scoped lang="scss">
 .HomeMain {
   flex: 1;
-  background-color: yellow;
+
 }
 </style>

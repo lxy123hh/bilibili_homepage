@@ -1,11 +1,12 @@
 import { VueQueryPlugin } from '@tanstack/vue-query'
+import ElementPlus from 'element-plus'
 import { createSSRApp } from 'vue'
 import App from './App.vue'
 import { requestInterceptor } from './http/interceptor'
 import { routeInterceptor } from './router/interceptor'
-
 import store from './store'
 import '@/style/index.scss'
+import 'element-plus/dist/index.css'
 import 'virtual:uno.css'
 
 export function createApp() {
@@ -14,6 +15,7 @@ export function createApp() {
   app.use(routeInterceptor)
   app.use(requestInterceptor)
   app.use(VueQueryPlugin)
+  app.use(ElementPlus)
 
   return {
     app,
